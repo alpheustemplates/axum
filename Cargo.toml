@@ -5,16 +5,16 @@ edition = "2024"
 [dependencies]
 axum = { version = "~0.8.9" }
 axum-server = { version = "~0.8.0", features = ["tls-rustls"] }
-axum-test = { version = "^21.0.0" }
-axum_typed_multipart = { version = "~0.16.6" }
+axum-test = { version = "^21.1.0" }
+axum_typed_multipart = { version = "~0.16.8" }
 dotenv_plus = { version = "~0.5.1" }
 jder_axum = { version = "~0.11.0", features = ["typed_multipart", "request_body_limit", "request_time_limit", "utoipa"] }
 literalize = { version = "~0.1.0", features = ["all"] }
-rustls = { version = "~0.23.41", features = ["ring"] }
-serde = { version = "^1.0.228", features = ["derive"] }
-serde_json = { version = "1.0.150" }
-tokio = { version = "^1.52.3", features = ["full"] }
-tower-http = { version = "~0.7.0", features = ["fs", "cors", "compression-gzip"] }
+rustls = { version = "~0.23.46", features = ["ring"] }
+serde = { version = "^1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.154" }
+tokio = { version = "^1.53.3", features = ["full"] }
+tower-http = { version = "~0.7.1", features = ["fs", "cors", "compression-gzip"] }
 utoipa = { version = "^5.5.0", features = ["macros", "preserve_order"] }
 utoipa-axum = { version = "~0.2.0" }
 utoipa-scalar = { version = "~0.3.0", features = ["axum"] }
